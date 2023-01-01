@@ -1,0 +1,5 @@
+#!/bin/sh
+
+printf "Code verification before submission"
+
+./mvnw clean install checkstyle:checkstyle findbugs:findbugs -Dskip.npm -DskipTests=true -Dgpg.skip
